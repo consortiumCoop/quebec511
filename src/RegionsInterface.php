@@ -2,7 +2,7 @@
 
 namespace Quebec511;
 
-interface RegionsInterface extends \Countable
+interface RegionsInterface extends \Countable, \IteratorAggregate
 {
     /**
      * @return array<RegionInterface>

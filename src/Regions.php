@@ -62,4 +62,12 @@ class Regions implements RegionsInterface
     {
         return count($this->regions);
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function getIterator()
+    {
+        return new \ArrayIterator($this->regions);
+    }
 }
