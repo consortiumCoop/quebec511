@@ -1,6 +1,6 @@
 VERSION 0.1
 -----------
 
-Release date: ?
+Release date: 2020-04-02
 
- - initial prototype
+ - initial release
