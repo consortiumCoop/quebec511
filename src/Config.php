@@ -2,7 +2,6 @@
 
 namespace Quebec511;
 
-use Peak\ArrayValidation\Validation;
 use Symfony\Component\Yaml\Yaml;
 
 class Config implements ConfigInterface
@@ -18,12 +17,11 @@ class Config implements ConfigInterface
     {
         $this->config = Yaml::parseFile($file);
 
-        $validation = (new Validation($this->config))
-            ->expectExactlyKeys(['urls', 'regions'])
-            ->expectKeysToBeArray(['urls', 'regions']);
-
-        if ($validation->hasErrors()) {
-            throw new InvalidConfigException($validation->getLastError());
+        if (
+            !isset($this->config['urls']) || !isset($this->config['regions']) ||
+            !is_array($this->config['urls']) || !is_array($this->config['regions'])
+        ) {
+            throw new InvalidConfigException();
         }
     }
 
