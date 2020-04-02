@@ -1,0 +1,408 @@
+urls:
+  road_status: https://www.quebec511.info/Diffusion/Rss/GenererRss.aspx?regn={regionCode}&routes={roadCodes}&lang={lang}
+
+regions:
+  - code: 7000
+    name: "Abitibi-Témiscamingue"
+    roads:
+     - code: 109
+     - code: 111
+     - code: 113
+     - code: 117
+     - code: 382
+     - code: 386
+     - code: 388
+     - code: 390
+     - code: 391
+     - code: 393
+     - code: 395
+     - code: 397
+     - code: 399
+
+  - code: 4000
+    name: "Bas-Saint-Laurent-Gaspésie-Îles-de-la-Madeleine"
+    roads:
+      - code: 20
+        type: highway
+      - code: 85
+        type: highway
+      - code: 132
+      - code: 157
+      - code: 185
+      - code: 191
+      - code: 195
+      - code: 197
+      - code: 198
+      - code: 199
+      - code: 216
+      - code: 230
+      - code: 232
+      - code: 234
+      - code: 287
+      - code: 289
+      - code: 291
+      - code: 293
+      - code: 295
+      - code: 296
+      - code: 297
+      - code: 298
+      - code: 299
+      - code: 99440
+        name: "Route Lemieux"
+
+  - code: 5000
+    name: "Chaudière-Appalaches"
+    roads:
+      - code: 20
+        type: highway
+      - code: 73
+        type: highway
+      - code: 108
+      - code: 112
+      - code: 116
+      - code: 132
+      - code: 161
+      - code: 165
+      - code: 171
+      - code: 173
+      - code: 175
+      - code: 204
+      - code: 216
+      - code: 218
+      - code: 226
+      - code: 228
+      - code: 263
+      - code: 267
+      - code: 269
+      - code: 271
+      - code: 273
+      - code: 275
+      - code: 276
+      - code: 277
+      - code: 279
+      - code: 281
+      - code: 283
+      - code: 285
+
+  - code: 3000
+    name: "Côte-Nord"
+    roads:
+      - code: 138
+      - code: 172
+      - code: 385
+      - code: 389
+
+  - code: 9000
+    name: "Estrie"
+    roads:
+      - code: 10
+        type: highway
+      - code: 55
+        type: highway
+      - code: 108
+      - code: 112
+      - code: 116
+      - code: 141
+      - code: 143
+      - code: 147
+      - code: 161
+      - code: 204
+      - code: 206
+      - code: 208
+      - code: 210
+      - code: 212
+      - code: 214
+      - code: 216
+      - code: 220
+      - code: 222
+      - code: 243
+      - code: 245
+      - code: 247
+      - code: 249
+      - code: 251
+      - code: 253
+      - code: 255
+      - code: 257
+      - code: 263
+      - code: 410
+        type: highway
+      - code: 610
+        type: highway
+
+  - code: 10000
+    name: "Laurentides-Lanaudière"
+    roads:
+      - code: 13
+        type: highway
+      - code: 15
+        type: highway
+      - code: 25
+        type: highway
+      - code: 31
+        type: highway
+      - code: 40
+        type: highway
+      - code: 50
+        type: highway
+      - code: 107
+      - code: 117
+      - code: 125
+      - code: 131
+      - code: 138
+      - code: 148
+      - code: 158
+      - code: 309
+      - code: 311
+      - code: 321
+      - code: 323
+      - code: 327
+      - code: 329
+      - code: 333
+      - code: 335
+      - code: 337
+      - code: 339
+      - code: 341
+      - code: 343
+      - code: 344
+      - code: 345
+      - code: 346
+      - code: 347
+      - code: 348
+      - code: 349
+      - code: 364
+      - code: 370
+      - code: 640
+        type: highway
+
+  - code: 8000
+    name: "Laval"
+    roads:
+      - code: 13
+        type: highway
+      - code: 15
+        type: highway
+      - code: 19
+        type: highway
+      - code: 25
+        type: highway
+      - code: 117
+      - code: 125
+      - code: 148
+      - code: 335
+      - code: 440
+        type: highway
+
+  - code: 1000
+    name: "Mauricie–Centre-du-Québec"
+    roads:
+      - code: 20
+        type: highway
+      - code: 30
+        type: highway
+      - code: 40
+        type: highway
+      - code: 55
+        type: highway
+      - code: 116
+      - code: 122
+      - code: 132
+      - code: 138
+      - code: 139
+      - code: 143
+      - code: 153
+      - code: 155
+      - code: 157
+      - code: 159
+      - code: 161
+      - code: 162
+      - code: 165
+      - code: 216
+      - code: 218
+      - code: 224
+      - code: 226
+      - code: 239
+      - code: 243
+      - code: 255
+      - code: 259
+      - code: 261
+      - code: 263
+      - code: 265
+      - code: 267
+      - code: 348
+      - code: 349
+      - code: 350
+      - code: 351
+      - code: 352
+      - code: 354
+      - code: 359
+      - code: 361
+      - code: 363
+      - code: 367
+      - code: 955
+        type: highway
+      - code: 78341
+        name: " Route Saint-Albert"
+
+  - code: 11000
+    name: "Montérégie"
+    roads:
+      - code: 10
+        type: highway
+      - code: 15
+        type: highway
+      - code: 20
+        type: highway
+      - code: 25
+        type: highway
+      - code: 30
+        type: highway
+      - code: 35
+        type: highway
+      - code: 40
+        type: highway
+      - code: 104
+      - code: 112
+      - code: 116
+      - code: 122
+      - code: 132
+      - code: 133
+      - code: 134
+      - code: 137
+      - code: 138
+      - code: 139
+      - code: 201
+      - code: 202
+      - code: 203
+      - code: 205
+      - code: 207
+      - code: 209
+      - code: 211
+      - code: 213
+      - code: 215
+      - code: 217
+      - code: 219
+      - code: 221
+      - code: 222
+      - code: 223
+      - code: 224
+      - code: 225
+      - code: 227
+      - code: 229
+      - code: 231
+      - code: 233
+      - code: 235
+      - code: 236
+      - code: 237
+      - code: 239
+      - code: 241
+      - code: 243
+      - code: 325
+      - code: 338
+      - code: 340
+      - code: 342
+      - code: 530
+        type: highway
+      - code: 730
+        type: highway
+      - code: 930
+        type: highway
+
+  - code: 13000
+    name: "Montréal"
+    roads:
+      - code: 10
+        type: highway
+      - code: 13
+        type: highway
+      - code: 15
+        type: highway
+      - code: 19
+        type: highway
+      - code: 20
+        type: highway
+      - code: 25
+        type: highway
+      - code: 40
+        type: highway
+      - code: 112
+      - code: 117
+      - code: 125
+      - code: 134
+      - code: 138
+      - code: 335
+      - code: 520
+        type: highway
+      - code: 720
+        type: highway
+
+
+  - code: 6000
+    name: "Outaouais"
+    roads:
+      - code: 5
+        type: highway
+      - code: 50
+        type: highway
+      - code: 105
+      - code: 107
+      - code: 117
+      - code: 148
+      - code: 301
+      - code: 303
+      - code: 307
+      - code: 309
+      - code: 315
+      - code: 317
+      - code: 321
+      - code: 323
+      - code: 366
+
+  - code: 12000
+    name: "Québec (Capitale-Nationale)"
+    roads:
+      - code: 40
+        type: highway
+      - code: 73
+        type: highway
+      - code: 136
+      - code: 138
+      - code: 169
+      - code: 170
+      - code: 175
+      - code: 354
+      - code: 358
+      - code: 360
+      - code: 362
+      - code: 363
+      - code: 365
+      - code: 367
+      - code: 368
+      - code: 369
+      - code: 371
+      - code: 381
+      - code: 440
+        type: highway
+      - code: 540
+        type: highway
+      - code: 573
+        type: highway
+      - code: 740
+        type: highway
+      - code: 973
+        type: highway
+
+  - code: 2000
+    name: "Saguenay–Lac-Saint-Jean"
+    roads:
+      - code: 70
+        type: highway
+      - code: 113
+      - code: 155
+      - code: 167
+      - code: 169
+      - code: 170
+      - code: 172
+      - code: 175
+      - code: 372
+      - code: 373
+      - code: 381

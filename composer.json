@@ -1,0 +1,33 @@
+{
+  "name": "1franck/quebec511",
+  "description": "Scrape data from Quebec511 API",
+  "keywords": ["rss", "scrape", "api"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Francois Lajoie"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "ext-json": "*",
+    "symfony/yaml": "^4.3",
+    "peak/array-validation": "3.1.1",
+    "guzzlehttp/guzzle": "^6.5",
+    "psr/http-message": "^1.0",
+    "kevinrob/guzzle-cache-middleware": "^3.3",
+    "league/flysystem": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5",
+    "phpstan/phpstan": "^0.12"
+  },
+  "suggest": {},
+  "autoload": {
+    "psr-4": {
+      "Quebec511\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

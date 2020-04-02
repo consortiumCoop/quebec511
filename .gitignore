@@ -1,0 +1,30 @@
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.bat
+
+# ignore app environment files
+.prod
+.staging
+.testing
+.dev
+push.sh
+.phpunit.result.cache
+.env
+
+# folders to ignore
+/.idea
+/_backup
+/_test
+/_temp
+/vendor
+#/cache/*
+/logs/*
+/upload/*
+/tests/_reports/*
