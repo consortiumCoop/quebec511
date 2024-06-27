@@ -70,26 +70,28 @@ class RegionRequest
         if ($response->getStatusCode() === 200) {
             $items = [];
             $xml = simplexml_load_string($response->getBody());
-            foreach($xml->channel->item as $item)
-            {
-                if ($category !== null && (string) $item->category !== $category) {
-                    continue;
-                }
-                $itemArray = [];
-                foreach ($item as $key => $val) {
-                    $itemArray[$key] = (string) $val;
-                }
+            if (is_iterable($xml->channel->item)) {
+                foreach($xml->channel->item as $item)
+                {
+                    if ($category !== null && (string) $item->category !== $category) {
+                        continue;
+                    }
+                    $itemArray = [];
+                    foreach ($item as $key => $val) {
+                        $itemArray[$key] = (string) $val;
+                    }
 
-                // parse description
-                $descriptionParts = explode(' | ', $itemArray['description'] ?? []);
-                if (count($descriptionParts) === 3) {
-                    $itemArray['rawDescription'] = $itemArray['description'];
-                    $itemArray['description'] = $descriptionParts[0];
-                    $itemArray['roadway'] = $descriptionParts[1];
-                    $itemArray['visibility'] = $descriptionParts[2];
-                }
+                    // parse description
+                    $descriptionParts = explode(' | ', $itemArray['description'] ?? []);
+                    if (count($descriptionParts) === 3) {
+                        $itemArray['rawDescription'] = $itemArray['description'];
+                        $itemArray['description'] = $descriptionParts[0];
+                        $itemArray['roadway'] = $descriptionParts[1];
+                        $itemArray['visibility'] = $descriptionParts[2];
+                    }
 
-                $items[] = $itemArray;
+                    $items[] = $itemArray;
+                }
             }
         }
         return $items;
