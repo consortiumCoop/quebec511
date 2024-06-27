@@ -3,9 +3,21 @@ Fetch Quebec511 Rss feeds
 see https://www.quebec511.info
 
 # Installation
+```php
+    // In your composer.json : 
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/consortiumCoop/quebec511"
+        }
+    ]
 
-    $ composer require 1franck/quebec511
+    // and :
+    "require": {
+        "1frank/quebec511": "0.2"
+    }
 
+```
 # Usage
 
 ```php
