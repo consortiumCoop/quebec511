@@ -70,7 +70,7 @@ class RegionRequest
         if ($response->getStatusCode() === 200) {
             $items = [];
             $xml = simplexml_load_string($response->getBody());
-            if (is_iterable($xml->channel->item)) {
+            if (is_object($xml) && is_iterable($xml->channel->item)) {
                 foreach($xml->channel->item as $item)
                 {
                     if ($category !== null && (string) $item->category !== $category) {
