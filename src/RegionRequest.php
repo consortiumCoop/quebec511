@@ -66,9 +66,9 @@ class RegionRequest
         $items = [];
 
         $response = $this->client->request('GET', $url);
+        $body = (string) $response->getBody();
 
-        if ($response->getStatusCode() === 200) {
-            $items = [];
+        if ($response->getStatusCode() === 200 && strpos($body, '<?xml') !== false) {
             $xml = simplexml_load_string($response->getBody());
             if (is_object($xml) && is_iterable($xml->channel->item)) {
                 foreach($xml->channel->item as $item)
@@ -93,6 +93,14 @@ class RegionRequest
                     $items[] = $itemArray;
                 }
             }
+        }
+        else{
+            $items = [
+                "title" => "Une erreur s'est produite",
+                "description" => "Impossible de récupérer les données de Québec511 pour le moment",
+                "category" => "Erreur",
+                "pubDate" => date("Y-m-d H:i:s e")
+            ];
         }
         return $items;
     }
