@@ -95,7 +95,7 @@ class RegionRequest
             }
         }
         else{
-            $items = [
+            $items[] = [
                 "title" => "Une erreur s'est produite",
                 "description" => "Impossible de récupérer les données de Québec511 pour le moment",
                 "category" => "Erreur",
